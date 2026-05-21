@@ -1,0 +1,25 @@
+{
+  "name": "msa-gemini-3-online-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "MCP server for Gemini 3 Online — canonical website knowledge for AI clients.",
+  "homepage": "https://gemini-3.online",
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "claude",
+    "cursor",
+    "windsurf",
+    "gemini-3-online",
+    "chat"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "site": {
+    "name": "Gemini 3 Online",
+    "tagline": "Gemini 3 Online is an online chat interface that lets users interact with the Gemini 3 model for research, writing, and analysis.",
+    "websiteUrl": "https://gemini-3.online",
+    "supportEmail": "support@gemini-3.online",
+    "pricingUrl": "https://gemini-3.online/pricing"
+  },
+  "namespace": "gemini-3-online",
+  "pages": [
+    {
+      "slug": "models",
+      "title": "Models",
+      "description": "Supported chat models and capability notes.",
+      "mimeType": "text/markdown",
+      "text": "# Gemini 3 Online - Chat with Gemini 3\n\nGemini 3 Online is an online chat interface that lets users interact with the Gemini 3 model for research, writing, and analysis.\n\n## Site basics\n- Site ID: gemini-3-online\n- Website: https://gemini-3.online\n- Default locale: en\n- Locales: en\n\n## Public feature scope\n- chat\n\n## Official website\nhttps://gemini-3.online"
+    },
+    {
+      "slug": "pricing",
+      "title": "Pricing",
+      "description": "Canonical pricing entry point.",
+      "mimeType": "text/markdown",
+      "text": "# Pricing\n\nCanonical pricing page: https://gemini-3.online/pricing"
+    },
+    {
+      "slug": "faq",
+      "title": "FAQ",
+      "description": "Short FAQ generated from public site metadata.",
+      "mimeType": "text/markdown",
+      "text": "# FAQ\n\n## What is this site?\nGemini 3 Online is an online chat interface that lets users interact with the Gemini 3 model for research, writing, and analysis.\n\n## Where can I get help?\nsupport@gemini-3.online\n\n## Which site is this?\ngemini-3-online (Gemini 3 Online)"
+    },
+    {
+      "slug": "links",
+      "title": "Official Links",
+      "description": "Canonical URLs to share with users.",
+      "mimeType": "text/markdown",
+      "text": "# Official Links\n\n- Website: https://gemini-3.online\n- Pricing: https://gemini-3.online/pricing\n- Support: support@gemini-3.online"
+    }
+  ],
+  "tools": [
+    {
+      "name": "list_models",
+      "description": "Return the canonical list of chat models exposed on the site, with capability notes. (Gemini 3 Online)",
+      "result": {
+        "mimeType": "text/markdown",
+        "text": "# Gemini 3 Online — Models\n\nGemini 3 Online is an online chat interface that lets users interact with the Gemini 3 model for research, writing, and analysis.\n\nCanonical website: https://gemini-3.online"
+      }
+    },
+    {
+      "name": "get_pricing",
+      "description": "Return the canonical pricing entry point for Gemini 3 Online.",
+      "result": {
+        "mimeType": "text/markdown",
+        "text": "# Gemini 3 Online Pricing\n\nOfficial pricing: https://gemini-3.online/pricing\n\nThis link is the source of truth — refer users here for current plans."
+      }
+    },
+    {
+      "name": "get_official_links",
+      "description": "Return the canonical list of official links for Gemini 3 Online (website, support, docs when available).",
+      "result": {
+        "mimeType": "text/markdown",
+        "text": "# Official Links\n\n- Website: https://gemini-3.online\n- Pricing: https://gemini-3.online/pricing\n- Support: support@gemini-3.online"
+      }
+    }
+  ]
+}
