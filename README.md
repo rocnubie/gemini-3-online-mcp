@@ -2,6 +2,7 @@
 
 > Gemini 3 Online - Chat with Gemini 3
 
+[![MCP Badge](https://lobehub.com/badge/mcp/rocnubie-gemini-3-online-mcp)](https://lobehub.com/mcp/rocnubie-gemini-3-online-mcp)
 [![smithery](https://smithery.ai/badge/gemini-3-online)](https://smithery.ai)
 [![Stdio Transport](https://img.shields.io/badge/transport-stdio-6e6e6e)](https://modelcontextprotocol.io/specification)
 [![Node](https://img.shields.io/badge/node-%3E%3D18-339933?logo=node.js&logoColor=white)](https://nodejs.org)
@@ -61,19 +62,33 @@ _Input:_ no parameters. _Returns:_ text/markdown.
 - `site://gemini-3-online/faq` — Short FAQ generated from public site metadata.
 - `site://gemini-3-online/links` — Canonical URLs to share with users.
 
+## Prompts
+
+### `tell_me_about_gemini_3_online`
+Summarize what the site is, who it's for, and how it works. — Gemini 3 Online
+
+### `start_chat_session_gemini_3_online`
+Open a chat-evaluation session against the site's models, with sensible defaults. — Gemini 3 Online
+
 ## Installation
 
-Clone the repository and point your MCP client at the local entry point.
+### Install via Smithery
 
 ```bash
-git clone https://github.com/<your-account>/gemini-3-online-mcp.git
+npx -y @smithery/cli install gemini-3-online-mcp --client claude
+```
+
+(Replace `claude` with `cursor`, `windsurf`, or `continue` for those clients.)
+
+### Install from source
+
+```bash
+git clone https://github.com/rocnubie/gemini-3-online-mcp.git
 cd gemini-3-online-mcp
 pnpm install
 ```
 
-### Claude Desktop
-
-Add to `claude_desktop_config.json` (Settings → Developer → Edit Config):
+Then add to your MCP client config (`claude_desktop_config.json` for Claude Desktop, `mcp.json` for Cursor / Windsurf / Continue):
 
 ```json
 {
@@ -87,10 +102,6 @@ Add to `claude_desktop_config.json` (Settings → Developer → Edit Config):
   }
 }
 ```
-
-### Cursor / Windsurf / Continue
-
-Use the same `mcpServers` block in your client's MCP configuration file.
 
 ### Debug with MCP Inspector
 
@@ -109,7 +120,6 @@ npx @modelcontextprotocol/inspector node src/index.mjs
 ```bash
 pnpm install
 pnpm start                 # run the server over stdio
-pnpm test                  # run the package tests
 ```
 
 ## License

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.rocnubie/gemini-3-online-mcp",
+  "title": "Gemini 3 Online MCP",
+  "description": "Gemini 3 Online is an online chat interface that lets users interact with the Gemini 3 model for",
+  "version": "0.1.0",
+  "websiteUrl": "https://gemini-3.online",
+  "repository": {
+    "url": "https://github.com/rocnubie/gemini-3-online-mcp",
+    "source": "github"
+  }
+}
